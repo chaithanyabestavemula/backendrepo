@@ -51,7 +51,7 @@ class customer(models.Model):
     amount=models.IntegerField(null=False)
 class fileupload(models.Model):
     name=models.CharField(max_length=30)
-    file=models.FileField()
+    file=models.FileField(upload_to="")
     def __str__(self):
         return self.name
 

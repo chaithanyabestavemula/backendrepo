@@ -16,6 +16,8 @@ admin.site.register(Session)
 @admin.register(customer)
 class customeradmin(admin.ModelAdmin):
     list_display = ('name','amount')
+    list_filter = ['amount']
+
 
 
 
